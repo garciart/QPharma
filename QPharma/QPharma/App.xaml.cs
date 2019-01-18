@@ -11,8 +11,8 @@ namespace QPharma {
             MainPage = new MainPage();
         }
 
-        protected override void OnStart() {
-            // Handle when your app starts
+        protected async override void OnStart() {
+            await MainPage.DisplayAlert("DISCLAIMER:", "FOR QUICK REFERENCE ONLY! ALWAYS VERIFY THE DOSE!\n\nYou are responsible for administering the right dose of the right drug to the right patient at the right time through the right route!", "OK");
         }
 
         protected override void OnSleep() {

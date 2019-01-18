@@ -1,0 +1,14 @@
+﻿            <Grid>
+                <Label Text="Age:" VerticalTextAlignment="Center"
+                        Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="ageEntry" Placeholder="13" Keyboard="Numeric" Text="{Binding Value, Source={x:Reference ageStepper}}"
+                        Grid.Row="0" Grid.Column="1" />
+                <Stepper x:Name="ageStepper" Minimum="0" Maximum="120" Value="{Binding ageStepper, Mode=TwoWay}"
+                        Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" />
+                <Label Text="Weight:" VerticalTextAlignment="Center" 
+                        Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="weightEntry" Placeholder="100" Keyboard="Numeric" Text="{Binding Value, Source={x:Reference weightStepper}}"
+                        Grid.Row="1" Grid.Column="1" />
+                <Stepper x:Name="weightStepper" Minimum="0" Maximum="1000" Value="{Binding weightStepper, Mode=TwoWay}" 
+                        Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" />
+            </Grid>
